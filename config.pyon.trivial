@@ -1,0 +1,52 @@
+{
+    "charts": [
+        {
+            "chart_id": "nanotime_chart",
+            "chart_title": "system nanotime",
+            "chart_series": [
+                { "metric": "nanotime", "color": "red" },
+            ],
+        },
+        {
+            "chart_id": "http_load_time_chart",
+            "chart_title": "HTTP load time",
+            "chart_series": [
+                { "metric": "http_load_time", "target": "http://www.cloudflare.com", "color": "lightblue" },
+                { "metric": "http_load_time", "target": "http://www.google.com/", "color": "blue" },
+                { "metric": "http_load_time_for_hardcoded_cnn", "color": "gray" },
+            ],
+        },
+    ],
+    "metrics": {
+        "twitter_followers": {
+            "cmd": "get-twitter-follower-count %(target)s",
+            "title": "@%(target)s follower count",
+            "throttle_sleep_seconds": 2,
+        },
+        "alexa_rank": {
+            "cmd": "get-alexa-rank %(target)s",
+            "title": "%(target)s alexa rank",
+            "throttle_sleep_seconds": 2,
+        },
+        "http_load_time": {
+            "cmd": "/usr/bin/time --format=%%e wget -q -O /dev/null %(target)s 2>&1",
+            "title": "seconds to load %(target)s",
+        },
+        "http_load_time_for_hardcoded_cnn": {
+            "cmd": "/usr/bin/time --format=%%e wget -q -O /dev/null http://cnn.com 2>&1",
+            "title": "seconds to load cnn.com",
+        },
+        "rf_hits_for_entity": {
+            "cmd": "rf-authenticated rf-get-entity-json-by-id %(target)s | jq '.entity_details[\"%(target)s\"].hits'",
+            "title": "rf hits for entity %(target)s",
+        },
+        "rf_person_hits": {
+            "cmd": "rf-authenticated rf-get-person-entity-details-json '%(target)s' | jq .hits",
+            "title": "rf hits for person %(target)s",
+        },
+        "nanotime": {
+            "cmd": "date +%%s%%N",
+            "title": "system nanotime",
+        }
+    }
+}

@@ -1,0 +1,257 @@
+{
+    "charts": [
+        {
+            "chart_id": "twitter_followers_rf_vs_competitor_spreadsheet",
+            "chart_title": "twitter followers - threat intel companies (all)",
+            "chart_series": [
+                { "metric": "twitter_followers", "color": "red",    "target": "RecordedFuture" },
+                { "metric": "twitter_followers", "color": "black",    "target": "BitSight" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Cyber4Sight" },
+                { "metric": "twitter_followers", "color": "black",    "target": "BrightPointSec" },
+                { "metric": "twitter_followers", "color": "black",    "target": "CentripetalNet" },
+                # crits open source project (no twitter)
+                { "metric": "twitter_followers", "color": "black",    "target": "CrowdStrike" },
+                { "metric": "twitter_followers", "color": "black",    "target": "CYjAX_UK" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Cytegic" },
+                # Cyveillance was bought by looking glass cyber in dec 2015
+                { "metric": "twitter_followers", "color": "black",    "target": "digitalshadows" },
+                { "metric": "twitter_followers", "color": "black",    "target": "DomainTools" },
+                { "metric": "twitter_followers", "color": "black",    "target": "eclecticiq" },
+                { "metric": "twitter_followers", "color": "black",    "target": "emergingthreats" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FarsightSecInc" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FireEye" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FlashpointIntel" },
+                # use IBM for Analyst Notebook?
+                # IID (didn't find)
+                { "metric": "twitter_followers", "color": "black",    "target": "Intel471Inc" },
+                { "metric": "twitter_followers", "color": "black",    "target": "iSIGHT_Partners" },
+                { "metric": "twitter_followers", "color": "black",    "target": "keylines" },
+                { "metric": "twitter_followers", "color": "black",    "target": "LG_Cyber" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Paterva" },
+                { "metric": "twitter_followers", "color": "black",    "target": "NorseCorp" },
+                { "metric": "twitter_followers", "color": "black",    "target": "PalantirTech" },
+                { "metric": "twitter_followers", "color": "black",    "target": "RiskIQ" },
+                { "metric": "twitter_followers", "color": "black",    "target": "shodanhq" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Silobreaker" },
+                { "metric": "twitter_followers", "color": "black",    "target": "SoltraEdge" },
+                { "metric": "twitter_followers", "color": "black",    "target": "SurfWatchLabs" },
+                { "metric": "twitter_followers", "color": "black",    "target": "symantec" },
+                { "metric": "twitter_followers", "color": "black",    "target": "threatquotient" },
+                { "metric": "twitter_followers", "color": "black",    "target": "ThreatConnect" },
+                { "metric": "twitter_followers", "color": "black",    "target": "anomali" },
+                { "metric": "twitter_followers", "color": "black",    "target": "VERISIGN" },
+                { "metric": "twitter_followers", "color": "black",    "target": "virustotal" },
+                { "metric": "twitter_followers", "color": "black",    "target": "wapacklabs" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Webroot" },
+                { "metric": "twitter_followers", "color": "black",    "target": "ZeroFOX" },
+
+                # not listed on competitor spreadsheet
+                { "metric": "twitter_followers", "color": "black",    "target": "proofpoint" },
+            ],
+        },
+        {
+            "chart_id": "twitter_followers_rf_vs_goliaths",
+            "chart_title": "twitter followers - threat intel companies (large - above 20K or more followers)",
+            "chart_series": [
+                { "metric": "twitter_followers", "color": "red",      "target": "RecordedFuture" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FireEye" },
+                { "metric": "twitter_followers", "color": "black",    "target": "symantec" },
+                { "metric": "twitter_followers", "color": "black",    "target": "VERISIGN" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Webroot" },
+            ],
+        },
+        {
+            "chart_id": "twitter_followers_rf_vs_nearby",
+            "chart_title": "twitter followers",
+            "chart_series": [
+                { "metric": "twitter_followers", "color": "red",    "target": "RecordedFuture" },
+                { "metric": "twitter_followers", "color": "orange",    "target": "CrowdStrike" },
+                { "metric": "twitter_followers", "color": "gray",    "target": "FlashpointIntel" },
+                { "metric": "twitter_followers", "color": "blue",    "target": "NorseCorp" },
+                { "metric": "twitter_followers", "color": "black",    "target": "PalantirTech" },
+                { "metric": "twitter_followers", "color": "green",    "target": "shodanhq" },
+            ],
+        },
+        {
+            "chart_id": "twitter_followers_rf_vs_500_to_20k",
+            "chart_title": "twitter followers - threat intel companies (midsize - 500 to 20K followers)",
+            "chart_series": [
+                { "metric": "twitter_followers", "color": "red",      "target": "RecordedFuture" },
+                { "metric": "twitter_followers", "color": "black",    "target": "BitSight" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Cyber4Sight" },
+                { "metric": "twitter_followers", "color": "black",    "target": "BrightPointSec" },
+                { "metric": "twitter_followers", "color": "black",    "target": "CentripetalNet" },
+                # crits open source project (no twitter)
+                { "metric": "twitter_followers", "color": "black",    "target": "CrowdStrike" },
+                { "metric": "twitter_followers", "color": "black",    "target": "CYjAX_UK" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Cytegic" },
+                # Cyveillance was bought by looking glass cyber in dec 2015
+                { "metric": "twitter_followers", "color": "black",    "target": "digitalshadows" },
+                { "metric": "twitter_followers", "color": "black",    "target": "DomainTools" },
+                { "metric": "twitter_followers", "color": "black",    "target": "eclecticiq" },
+                # "emerging threats" bought by proof point march 2015 but twitter account is still alive
+                { "metric": "twitter_followers", "color": "black",    "target": "emergingthreats" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FarsightSecInc" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FlashpointIntel" },
+                # use IBM for Analyst Notebook?
+                # IID (didn't find)
+                { "metric": "twitter_followers", "color": "black",    "target": "Intel471Inc" },
+                { "metric": "twitter_followers", "color": "black",    "target": "iSIGHT_Partners" },
+                { "metric": "twitter_followers", "color": "black",    "target": "keylines" },
+                { "metric": "twitter_followers", "color": "black",    "target": "LG_Cyber" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Paterva" },
+                { "metric": "twitter_followers", "color": "black",    "target": "NorseCorp" },
+                { "metric": "twitter_followers", "color": "black",    "target": "PalantirTech" },
+                { "metric": "twitter_followers", "color": "black",    "target": "RiskIQ" },
+                { "metric": "twitter_followers", "color": "black",    "target": "shodanhq" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Silobreaker" },
+                { "metric": "twitter_followers", "color": "black",    "target": "SoltraEdge" },
+                { "metric": "twitter_followers", "color": "black",    "target": "SurfWatchLabs" },
+                { "metric": "twitter_followers", "color": "black",    "target": "threatquotient" },
+                { "metric": "twitter_followers", "color": "black",    "target": "ThreatConnect" },
+                { "metric": "twitter_followers", "color": "black",    "target": "anomali" },
+                { "metric": "twitter_followers", "color": "black",    "target": "virustotal" },
+                { "metric": "twitter_followers", "color": "black",    "target": "wapacklabs" },
+                { "metric": "twitter_followers", "color": "black",    "target": "ZeroFOX" },
+
+                # not listed on competitor spreadsheet
+                { "metric": "twitter_followers", "color": "black",    "target": "proofpoint" },
+            ],
+        },
+        {
+            "chart_id": "twitter_followers_rf_vs_less_than_500_followers",
+            "chart_title": "twitter followers - threat intel companies (small - 500 or less followers)",
+            "chart_series": [
+                { "metric": "twitter_followers", "color": "black",    "target": "BitSight" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Cyber4Sight" },
+                { "metric": "twitter_followers", "color": "black",    "target": "BrightPointSec" },
+                { "metric": "twitter_followers", "color": "black",    "target": "CentripetalNet" },
+                # crits open source project (no twitter)
+                { "metric": "twitter_followers", "color": "black",    "target": "CYjAX_UK" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Cytegic" },
+                { "metric": "twitter_followers", "color": "black",    "target": "digitalshadows" },
+                { "metric": "twitter_followers", "color": "black",    "target": "eclecticiq" },
+                { "metric": "twitter_followers", "color": "black",    "target": "emergingthreats" },
+                { "metric": "twitter_followers", "color": "black",    "target": "FarsightSecInc" },
+                # use IBM for Analyst Notebook?
+                # IID (didn't find)
+                { "metric": "twitter_followers", "color": "black",    "target": "Intel471Inc" },
+                { "metric": "twitter_followers", "color": "black",    "target": "iSIGHT_Partners" },
+                { "metric": "twitter_followers", "color": "black",    "target": "keylines" },
+                # lookingGlass (didn't find)
+                { "metric": "twitter_followers", "color": "black",    "target": "RiskIQ" },
+                { "metric": "twitter_followers", "color": "black",    "target": "Silobreaker" },
+                { "metric": "twitter_followers", "color": "black",    "target": "SoltraEdge" },
+                { "metric": "twitter_followers", "color": "black",    "target": "SurfWatchLabs" },
+                { "metric": "twitter_followers", "color": "black",    "target": "threatquotient" },
+                { "metric": "twitter_followers", "color": "black",    "target": "ThreatConnect" },
+                { "metric": "twitter_followers", "color": "black",    "target": "anomali" },
+                { "metric": "twitter_followers", "color": "black",    "target": "wapacklabs" },
+            ],
+        },
+        {
+            "chart_id": "http_load_seconds",
+            "chart_title": "http load time (seconds)",
+            "chart_series": [
+                { "metric": "http_load_time", "color": "red",     "target": "https://www.recordedfuture.com" },
+                { "metric": "http_load_time", "color": "black",   "target": "https://www.digitalshadows.com" },
+                { "metric": "http_load_time", "color": "blue",   "target": "https://www.google.com" },
+                { "metric": "http_load_time", "color": "orange",   "target": "https://www.cloudflare.com" },
+            ],
+        },
+        {
+            "chart_id": "rf-entity-hits",
+            "chart_title": "rf entity hits",
+            "chart_series": [
+                { "metric": "rf_hits_for_entity", "color": "green",  "target": "ip:8.8.8.8" },
+                { "metric": "rf_hits_for_entity", "color": "green",  "target": "ip:8.8.4.4" },
+            ],
+        },
+        {
+            "chart_id": "rf-persons-hits",
+            "chart_title": "rf persons hits",
+            "chart_series": [
+                { "metric": "rf_person_hits", "color": "red",  "target": "Santa Clause" },
+                { "metric": "rf_person_hits", "color": "blue",  "target": "Gordon Lyon" },
+                { "metric": "rf_person_hits", "color": "black",  "target": "Jess Moss" },
+                { "metric": "rf_person_hits", "color": "gray",  "target": "Kevin Mitnick" },
+            ],
+        },
+        {
+            "chart_id": "alexa_rank_rf_vs_competitor_spreadsheet",
+            "chart_title": "alexa rank - threat intel companies",
+            "chart_series": [
+                { "metric": "alexa_rank", "color": "red",    "target": "recordedfuture.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "bitsighttech.com" },
+                # no domain for Cyber4Sight
+                { "metric": "alexa_rank", "color": "black",    "target": "brightpointsecurity.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "centripetalnetworks.com" },
+                # crits open source project (no twitter)
+                { "metric": "alexa_rank", "color": "black",    "target": "crowdstrike.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "cyjax.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "cytegic.com" },
+                # Cyveillance was bought by looking glass cyber in dec 2015
+                { "metric": "alexa_rank", "color": "black",    "target": "digitalshadows.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "domaintools.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "eclecticiq.com" },
+                # "emerging threats" bought by proof point march 2015
+                { "metric": "alexa_rank", "color": "black",    "target": "farsightsecurity.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "fireeye.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "flashpoint-intel.com" },
+                # use IBM for Analyst Notebook?
+                # IID (didn't find)
+                { "metric": "alexa_rank", "color": "black",    "target": "intel471.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "isightpartners.com" },
+                # cambridge-intelligence.com is the company that sells "keylines"
+                { "metric": "alexa_rank", "color": "black",    "target": "cambridge-intelligence.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "lookingglasscyber.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "paterva.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "norse-corp.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "palantir.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "riskiq.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "shodan.io" },
+                { "metric": "alexa_rank", "color": "black",    "target": "silobreaker.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "soltra.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "surfwatchlabs.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "symantec.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "threatq.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "threatconnect.com" },
+                # ThreatStream rebranded itself as "Anomali" march 2016
+                { "metric": "alexa_rank", "color": "black",    "target": "anomali.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "verisign.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "virustotal.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "wapacklabs.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "webroot.com" },
+                { "metric": "alexa_rank", "color": "black",    "target": "zerofox.com" },
+
+                # not listed on competitor spreadsheet
+                { "metric": "alexa_rank", "color": "black",    "target": "proofpoint.com" },
+            ],
+
+        },
+    ],
+    "metrics": {
+        "twitter_followers": {
+            "cmd": "get-twitter-follower-count %(target)s",
+            "title": "@%(target)s follower count",
+            "throttle_sleep_seconds": 2,
+        },
+        "alexa_rank": {
+            "cmd": "get-alexa-rank %(target)s",
+            "title": "%(target)s alexa rank",
+            "throttle_sleep_seconds": 2,
+        },
+        "http_load_time": {
+            "cmd": "/usr/bin/time --format=%%e wget -q -O /dev/null %(target)s 2>&1",
+            "title": "seconds to load %(target)s",
+        },
+        "rf_hits_for_entity": {
+            "cmd": "rf-authenticated rf-get-entity-json-by-id %(target)s | jq '.entity_details[\"%(target)s\"].hits'",
+            "title": "rf hits for entity %(target)s",
+        },
+        "rf_person_hits": {
+            "cmd": "rf-authenticated rf-get-person-entity-details-json '%(target)s' | jq .hits",
+            "title": "rf hits for person %(target)s",
+        }
+    }
+}

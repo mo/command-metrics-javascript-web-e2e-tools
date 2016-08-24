@@ -1,0 +1,3 @@
+[submodule "command-metrics"]
+	path = command-metrics
+	url = https://github.com/mo/command-metrics.git
