@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(dirname $0)
+
+echo rm -rf $SCRIPT_DIR/data $SCRIPT_DIR/jscache
+./command-metrics/src/refresh-measurements measure
+./command-metrics/src/refresh-measurements measure
+
+PACKAGES="qunitjs mocha tape ava jasmine karma jest"
+
+for PACKAGE in $PACKAGES; do
+  npm-download-stats $PACKAGE > $PACKAGE-daily.json
+  convert-daily-json-to-weekly-csv $PACKAGE-daily.json > $PACKAGE-weekly.csv
+  ./command-metrics/src/refresh-measurements import npm_weekly_downloads --target $PACKAGE $PACKAGE-weekly.csv
+done

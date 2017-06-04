@@ -1,0 +1,22 @@
+#!/usr/bin/env python2
+
+import sys
+import json
+import datetime
+
+daily_json_array = json.loads(open(sys.argv[1]).read())
+date_to_daily_downloads_map = {}
+for daily_json in daily_json_array:
+    date_to_daily_downloads_map[daily_json["day"]] = daily_json["downloads"]
+
+start_date = datetime.datetime.strptime("2015-02-26", "%Y-%m-%d")
+
+current_date = start_date
+while current_date < datetime.datetime.now():
+    weekly_downloads = 0
+    for i in range(0, 7):
+        date_of_day_in_week = (current_date - datetime.timedelta(days=i)).strftime("%Y-%m-%d")
+        weekly_downloads += date_to_daily_downloads_map[date_of_day_in_week]
+
+    print current_date.strftime("%Y-%m-%d") + " 00:00:00," + str(weekly_downloads)
+    current_date += datetime.timedelta(days=1)
