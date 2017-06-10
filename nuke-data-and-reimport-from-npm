@@ -13,7 +13,7 @@ echo '{
             "chart_series": [
 ' > config.pyon
 for PACKAGE in $PACKAGES; do
-echo '                { "metric": "npm_weekly_downloads", "target": "'$PACKAGE'", "color": "'$(color-hash-cli $PACKAGE)'" },' >> config.pyon
+echo '                { "metric": "npm_weekly_downloads", "target": "'$PACKAGE'", "color": "'$(color-hash $PACKAGE)'" },' >> config.pyon
 done
 echo '            ],
         },
