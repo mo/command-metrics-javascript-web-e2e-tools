@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(dirname $0)
 
-PACKAGES="nightwatch protractor zombie chimp codeceptjs webdriverio casperjs intern testcafe nightmarejs selenium-webdriver"
+PACKAGES="nightwatch protractor zombie chimp codeceptjs webdriverio casperjs intern testcafe nightmare selenium-webdriver"
 
 echo rm -rf $SCRIPT_DIR/data $SCRIPT_DIR/jscache
 echo '{
