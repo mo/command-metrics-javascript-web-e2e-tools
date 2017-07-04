@@ -2,36 +2,33 @@
 
 SCRIPT_DIR=$(dirname $0)
 
-PACKAGES="nightwatch protractor chimp codeceptjs webdriverio intern testcafe nightmare selenium-webdriver"
+PACKAGES="chimp codeceptjs intern testcafe" # nightmare webdriverio nightwatch protractor selenium-webdriver"
 
-echo rm -rf $SCRIPT_DIR/data $SCRIPT_DIR/jscache
+rm -rf $SCRIPT_DIR/data $SCRIPT_DIR/jscache
 echo '{
     "charts": [
         {
-            "chart_id": "npm_weekly_downloads",
-            "chart_title": "npm weekly downloads",
+            "chart_id": "npm_downloads",
+            "chart_title": "npm downloads",
             "chart_series": [
 ' > config.pyon
 for PACKAGE in $PACKAGES; do
-echo '                { "metric": "npm_weekly_downloads", "target": "'$PACKAGE'", "color": "'$(color-hash $PACKAGE)'" },' >> config.pyon
+echo '                { "metric": "npm_downloads", "target": "'$PACKAGE'", "color": "'$(color-hash $PACKAGE)'" },' >> config.pyon
 done
 echo '            ],
         },
     ],
     "metrics": {
-        "npm_weekly_downloads": {
-            "cmd": "npm-download-stats-for-week %(target)s $(date +%%Y-%%m-%%d)",
-            "title": "weekly downloads for npm package %(target)s",
+        "npm_downloads": {
+            "cmd": "",
+            "title": "monthly downloads for npm package %(target)s",
         },
     }
 }
 ' >> config.pyon
 
-./command-metrics/src/refresh-measurements measure
-./command-metrics/src/refresh-measurements measure
-
 for PACKAGE in $PACKAGES; do
   npm-download-stats $PACKAGE > /tmp/$PACKAGE-daily.json
-  ./convert-daily-json-to-weekly-csv /tmp/$PACKAGE-daily.json > /tmp/$PACKAGE-weekly.csv
-  ./command-metrics/src/refresh-measurements import npm_weekly_downloads --target $PACKAGE /tmp/$PACKAGE-weekly.csv
+  ./convert-daily-json-to-monthly-csv /tmp/$PACKAGE-daily.json > /tmp/$PACKAGE-monthly.csv
+  ./command-metrics/src/refresh-measurements import npm_downloads --target $PACKAGE /tmp/$PACKAGE-monthly.csv
 done
