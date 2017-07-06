@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(dirname $0)
 
-PACKAGES="chimp codeceptjs intern testcafe" # nightmare webdriverio nightwatch protractor selenium-webdriver"
+PACKAGES="chimp codeceptjs intern testcafe nemo nightmare webdriverio nightwatch wd protractor selenium-webdriver"
 
 rm -rf $SCRIPT_DIR/data $SCRIPT_DIR/jscache
 echo '{
@@ -13,7 +13,7 @@ echo '{
             "chart_series": [
 ' > config.pyon
 for PACKAGE in $PACKAGES; do
-echo '                { "metric": "npm_downloads", "target": "'$PACKAGE'", "color": "'$(color-hash $PACKAGE)'" },' >> config.pyon
+echo '                { "metric": "npm_downloads", "target": "'$PACKAGE'" },' >> config.pyon
 done
 echo '            ],
         },
