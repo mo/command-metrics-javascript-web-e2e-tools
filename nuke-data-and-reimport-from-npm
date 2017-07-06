@@ -21,7 +21,7 @@ echo '            ],
     "metrics": {
         "npm_downloads": {
             "cmd": "",
-            "title": "monthly downloads for npm package %(target)s",
+            "title": "%(target)s monthly downloads",
         },
     }
 }
