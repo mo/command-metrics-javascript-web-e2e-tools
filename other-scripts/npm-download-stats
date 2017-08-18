@@ -1,0 +1,5 @@
+#!/bin/bash
+NPM_PACKAGE="$1"
+DATE_TODAY="$(date +%Y-%m-%d)"
+runcached -c $((24*60*60)) curl -s https://npm-stat.com/downloads/range/2010-01-01:$DATE_TODAY/$NPM_PACKAGE | jq .downloads
+
